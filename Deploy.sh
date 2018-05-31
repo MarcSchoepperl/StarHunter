@@ -52,7 +52,7 @@ echo ${NC}${NORMAL}
 echo ${NC}${NORMAL}
 echo "Connect to remote system               [${BOLD}..${NORMAL}]"
 if ! ssh -o ConnectTimeout=5 pi@$1 "cd Documents/Project/; make; ./StarHunter"; then
-  ERROR "Connection to remote system failed!"
+  ERROR "Error while building or executing on remote system!"
 fi
 echo "Connect to remote system, make and run [${GREEN}${BOLD}OK${NC}${NORMAL}]";
 echo ${NC}${NORMAL}

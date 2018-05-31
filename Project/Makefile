@@ -1,8 +1,8 @@
-CC = g++
-IN1 = src/Main.cpp
+CC = g++ -std=c++11
+SRC=$(wildcard src/*.cpp)
 OUT = StarHunter
-LIBS = -lm
+LIBS = -lm -lpthread
 CFLAGS = -Wall -o
 
 compile:
-	$(CC) $(CFLAGS) $(OUT) $(IN1) $(LIBS)
+	$(CC) $(CFLAGS) $(OUT) $(SRC) $(LIBS)
