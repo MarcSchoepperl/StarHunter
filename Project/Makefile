@@ -1,5 +1,5 @@
 CC = g++
-IN1 = src/StarHunter.cpp
+IN1 = src/Main.cpp
 OUT = StarHunter
 LIBS = -lm
 CFLAGS = -Wall -o
